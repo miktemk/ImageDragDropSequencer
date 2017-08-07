@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageDragDropSequencer", "ImageDragDropSequencer\ImageDragDropSequencer.csproj", "{FA8909C2-864F-4998-80E2-23F6FF71A73B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Miktemk", "..\MiktemkCommons\Miktemk\Miktemk.csproj", "{DB69C87C-B374-4CD7-B0CF-FAA5541B2DF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Miktemk.Wpf", "..\MiktemkCommons\Miktemk.Wpf\Miktemk.Wpf.csproj", "{DA6804E9-85DE-43C1-854E-6ABB3C85D970}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA8909C2-864F-4998-80E2-23F6FF71A73B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA8909C2-864F-4998-80E2-23F6FF71A73B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA8909C2-864F-4998-80E2-23F6FF71A73B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA8909C2-864F-4998-80E2-23F6FF71A73B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB69C87C-B374-4CD7-B0CF-FAA5541B2DF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB69C87C-B374-4CD7-B0CF-FAA5541B2DF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB69C87C-B374-4CD7-B0CF-FAA5541B2DF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB69C87C-B374-4CD7-B0CF-FAA5541B2DF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA6804E9-85DE-43C1-854E-6ABB3C85D970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA6804E9-85DE-43C1-854E-6ABB3C85D970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA6804E9-85DE-43C1-854E-6ABB3C85D970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA6804E9-85DE-43C1-854E-6ABB3C85D970}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

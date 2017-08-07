@@ -1,0 +1,40 @@
+﻿<Window x:Class="ImageDragDropSequencer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ignore="http://www.galasoft.ch/ignore"
+        xmlns:myControls="clr-namespace:ImageDragDropSequencer.Controls"
+        xmlns:mikWpfControls="clr-namespace:Miktemk.Wpf.Controls;assembly=Miktemk.Wpf"
+        mc:Ignorable="d ignore"
+        Height="300"
+        Width="300"
+        Title="Image Drag+Drop Sequencer"
+        Icon="Content/Images/favicon.png"
+        DataContext="{Binding Main, Source={StaticResource Locator}}">
+    
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Skins/MainSkin.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Window.InputBindings>
+        <KeyBinding Gesture="Ctrl+S" Command="{Binding CommandSave}"></KeyBinding>
+        <KeyBinding Key="Left" Command="{Binding CommandPrevImage}"></KeyBinding>
+        <KeyBinding Key="Right" Command="{Binding CommandNextImage}"></KeyBinding>
+        <KeyBinding Key="Up" Command="{Binding CommandScrollUp}"></KeyBinding>
+        <KeyBinding Key="Down" Command="{Binding CommandScrollDown}"></KeyBinding>
+    </Window.InputBindings>
+
+    <DockPanel>
+        <myControls:ImageInteractionControl
+            DraggyImageSequence="{Binding Path=DraggyImageSequence}"
+            ImageSaveFolder="{Binding ImageSaveFolder}"
+            CommandOnProjectFileDragged="{Binding CommandOnProjectFileDragged}"
+            />
+        <!--<TextBlock TextWrapping="Wrap" Text="helloasdkasjdkasj d laskj dljkas djksadlkjsa djsa jjddddddddddddddddddddddddddddddddjjddddddddddddddddddddddddddddddddjjddddddddddddddddddddddddddddddddjjddddddddddddddddddddddddddddddddjjddddddddddddddddddddddddddddddddjjddddddddddddddddddddddddddddddddjjddddddddddddddddddddddddddddddddjjddddddddddddddddddddddddddddddddjjddddddddddddddddddddddddddddddddjjddddddddddddddddddddddddddddddddjjddddddddddddddddddddddddddddddddv" />-->
+    </DockPanel>
+</Window>
